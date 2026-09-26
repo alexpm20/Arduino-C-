@@ -31,3 +31,4 @@ void loop() {
   Serial.print("Distance: ");
   Serial.print(distance);
   Serial.println("cm");
+}
