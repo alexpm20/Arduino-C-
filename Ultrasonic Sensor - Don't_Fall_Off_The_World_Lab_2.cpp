@@ -31,4 +31,7 @@ void loop() {
 if ( distance > 4) { 
   Serial.println("STOP");
 }
+else{
+  Serial.println("CLEAR");
+}
 }
