@@ -1,21 +1,16 @@
 
 #include "Arduino_LED_Matrix.h"
-
-
 ArduinoLEDMatrix matrix;
+
 const int  LRpin = A0; 
 const int  UDpin = A1;
-
 
 int LR;
 int UD;
 
-
 void setup() {
-  Serial.begin(9600);
   matrix.begin();
 }
-
 
 uint8_t frame[8][12] = {
   { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -27,7 +22,6 @@ uint8_t frame[8][12] = {
   { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
   { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 };
-
 
 void up_arrow(){
  
